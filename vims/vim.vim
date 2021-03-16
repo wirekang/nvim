@@ -1,3 +1,4 @@
+set nocompatible
 set shortmess+=c
 set nobackup
 set noswapfile
@@ -21,5 +22,7 @@ set cursorline
 set updatetime=100
 inoremap jj <Esc>
 let mapleader=" "
-
+nnoremap <C-Space> <Nop>
+set colorcolumn=90
+set clipboard=unnamedplus
 

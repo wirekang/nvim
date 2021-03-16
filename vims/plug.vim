@@ -15,4 +15,5 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-rooter'
 Plug 'TaDaa/vimade'
 Plug 'roryokane/detectindent'
+Plug 'liuchengxu/vim-which-key'
 call plug#end()

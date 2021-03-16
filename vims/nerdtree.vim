@@ -8,3 +8,5 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 "nnoremap <C-f> :NERDTreeFind<CR>
 
 let g:NERDTreeWinPos = "left"
+let g:NERDTreeWinSize=60
+nnoremap nerd :NERDTreeToggle<cr>
