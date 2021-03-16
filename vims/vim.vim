@@ -59,3 +59,4 @@ noremap <leader>wN :<c-u>vertical res -16<cr>
 
 noremap <leader>cs :<c-u>w<cr>:<c-u>so $MYVIMRC<cr>
 
+noremap <leader>cr :<c-u>set relativenumber!<cr>
