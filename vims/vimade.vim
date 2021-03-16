@@ -1,3 +1,4 @@
 let g:vimade = {}
-let g:vimade.basebg='#55aa00'
+let g:vimade.basebg='#cceecc'
 let g:vimade.fadelevel=0
+
