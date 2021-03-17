@@ -25,9 +25,9 @@ set cmdheight=2
 set laststatus=2
 set cursorline
 set updatetime=100
+set colorcolumn=90
 inoremap jj <Esc>
 let mapleader=" "
-set colorcolumn=90
 inoremap <c-space> <Nop>
 noremap <c-space> <Nop>
 tnoremap <esc> <c-\><c-n>
@@ -50,12 +50,14 @@ noremap <leader>wh <c-w>h
 noremap <leader>wj <c-w>j
 noremap <leader>wk <c-w>k
 noremap <leader>wl <c-w>l
-noremap <leader>ws :<c-u>split<cr>
-noremap <leader>wv :<c-u>vsplit<cr>
+noremap <leader>ws :<c-u>split<cr><c-w>j
+noremap <leader>wv :<c-u>vsplit<cr><c-w>l
 noremap <leader>wp :<c-u>res +16<cr>
 noremap <leader>wn :<c-u>res -16<cr>
 noremap <leader>wP :<c-u>vertical res +16<cr>
 noremap <leader>wN :<c-u>vertical res -16<cr>
+noremap <leader>wd <c-w>c
+noremap <leader>wo <c-w>o
 
 noremap <leader>cs :<c-u>w<cr>:<c-u>so $MYVIMRC<cr>
 

@@ -15,9 +15,9 @@ let g:coc_snippet_next = '<tab>'
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-nmap <silent> <leader>ldn <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>ldp <Plug>(coc-diagnostic-prev)
-nnoremap <silent> <leader>lda :<c-u>CocDiagnostics<cr>
+nmap <silent> tdn <Plug>(coc-diagnostic-next)
+nmap <silent> tdp <Plug>(coc-diagnostic-prev)
+nnoremap <silent> tda :<c-u>CocDiagnostics<cr>
 
 
 augroup coc-diag
@@ -26,12 +26,12 @@ augroup coc-diag
     \ nnoremap <buffer> <esc> :<c-u>q<cr>
 augroup end
 
-nmap <silent> <leader>lgd <Plug>(coc-definition)
-nmap <silent> <leader>lgt <Plug>(coc-type-definition)
-nmap <silent> <leader>lgi <Plug>(coc-implementation)
-nmap <silent> <leader>lgr <Plug>(coc-references)
+nmap <silent> tgd <Plug>(coc-definition)
+nmap <silent> tgt <Plug>(coc-type-definition)
+nmap <silent> tgi <Plug>(coc-implementation)
+nmap <silent> tgr <Plug>(coc-references)
 
-nnoremap <silent> <leader>ll :<c-u>call <SID>show_documentation()<CR>
+nnoremap <silent> th :<c-u>call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -45,11 +45,11 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-nmap <leader>lrr <Plug>(coc-refactor)
-nmap <leader>lrf <Plug>(coc-fix-current)
-nmap <leader>lrn <Plug>(coc-rename)
+nmap trr <Plug>(coc-refactor)
+nmap trf <Plug>(coc-fix-current)
+nmap trn <Plug>(coc-rename)
 
-nmap <leader>lf <Plug>(coc-format)
+nmap tf <Plug>(coc-format)
 
-nmap <leader>la <Plug>(coc-codeaction)
-nmap <leader>lc <Plug>(coc-codelens_action)
+nmap ta <Plug>(coc-codeaction)
+nmap tc <Plug>(coc-codelens_action)

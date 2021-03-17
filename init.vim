@@ -13,3 +13,6 @@ source ~/.config/nvim/vims/ultisnips.vim
 source ~/.config/nvim/vims/git-gutter.vim
 source ~/.config/nvim/vims/fzf.vim
 source ~/.config/nvim/vims/vim-jsx-typescript.vim
+source ~/.config/nvim/vims/rainbow.vim
+source ~/.config/nvim/vims/indentLine.vim
+
