@@ -1,5 +1,5 @@
 let g:gitgutter_map_keys=0
 
-nmap <leader>gg <Plug>(GitGutterPreviewHunk)
-nmap <leader>gn <Plug>(GitGutterNextHunk)<leader>gg
-nmap <leader>gp <Plug>(GitGutterPrevHunk)<leader>gg
+nmap <leader>Gj <Plug>(GitGutterNextHunk)<Plug>(GitGutterPreviewHunk)
+nmap <leader>Gk <Plug>(GitGutterPrevHunk)<Plug>(GitGutterPreviewHunk)
+nmap <leader>G <Plug>(GitGutterPreviewHunk)

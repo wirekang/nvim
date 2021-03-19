@@ -1,0 +1,6 @@
+prettier.formatFile
+explorer
+eslint.showOutputChannel
+prettier.open-output
+workspace.workspaceFolders
+workspace.diffDocument

@@ -4,7 +4,7 @@ source ~/.config/nvim/vims/vim.vim
 
 source ~/.config/nvim/vims/coc.vim
 source ~/.config/nvim/vims/airline.vim
-source ~/.config/nvim/vims/nerdtree.vim
+source ~/.config/nvim/vims/coc-explorer.vim
 source ~/.config/nvim/vims/vim-rooter.vim
 source ~/.config/nvim/vims/vimade.vim
 source ~/.config/nvim/vims/detectindent.vim
@@ -14,5 +14,8 @@ source ~/.config/nvim/vims/git-gutter.vim
 source ~/.config/nvim/vims/fzf.vim
 source ~/.config/nvim/vims/vim-jsx-typescript.vim
 source ~/.config/nvim/vims/rainbow.vim
-source ~/.config/nvim/vims/indentLine.vim
+source ~/.config/nvim/vims/vim-indent-guides.vim
+source ~/.config/nvim/vims/vimspector.vim
+source ~/.config/nvim/vims/auto-pairs.vim
+source ~/.config/nvim/vims/nerdcommenter.vim
 

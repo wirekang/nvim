@@ -1,1 +1,22 @@
-{}
+{
+  "suggest.minTriggerInputLength": 2,
+  "snippets.ultisnips.enable": true,
+  "explorer.file.git.showUntrackedFiles": true,
+  "explorer.quitOnOpen": true,
+  "explorer.previewAction.onHover": "content",
+  "explorer.keyMappings.global": {
+    "<esc>": "quit"
+  },
+  "explorer.presets": {
+    "pre": {
+      "position": "left",
+      "sources": [
+        {
+          "name": "file",
+          "expand": true
+        }
+      ]
+    }
+  },
+  "codeLens.enable": true
+}

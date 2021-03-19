@@ -1,26 +1,18 @@
 augroup fzf
     au!
     au FileType fzf
-    \ tmap <buffer> <esc> <c-c>
+    \ pwd
+    \ | tnoremap <buffer> <m-j> <down>
+    \| tnoremap <buffer> <m-k> <up>
+    \| tnoremap <buffer> <m-o> <cr>
 augroup END
 
 let g:fzf_action = {
-    \ "ctrl-t":"tab split"
+    \ "alt-s":"split",
+    \ "alt-v":"vsplit"
     \}
 
-nmap <silent><leader>fp :<c-u>call fzf#run({
-    \ "source": "find . ! -path '*/node_modules/*'",
-    \ "sink": "e",
-    \ "down": "20%"
-    \ })<CR>
-
-
-nmap <silent><leader>ff :<c-u>call fzf#run({
-    \ "source": printf("find %s ! -path '*/node_modules/*'", expand("%:p:h")),
-    \ "sink": "e",
-    \ "down": "20%"
-    \ })<CR>
-
-
+nmap <leader>f :<c-u>execute 'FZF' getcwd()<cr>
+nmap <leader>ff :<c-u>execute 'FZF' expand('%:p:h')<cr>
 
 
