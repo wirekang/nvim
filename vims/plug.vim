@@ -11,12 +11,11 @@ Plug 'TaDaa/vimade'
 Plug 'roryokane/detectindent'
 Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'puremourning/vimspector'
-Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'nanotech/jellybeans.vim'
 call plug#end()
