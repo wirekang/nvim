@@ -1,4 +1,11 @@
 {
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args":["start"],
+      "filetypes": ["sh"]
+    }
+  },
   "suggest.minTriggerInputLength": 2,
   "snippets.ultisnips.enable": true,
   "explorer.file.git.showUntrackedFiles": true,
