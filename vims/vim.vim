@@ -37,6 +37,8 @@ set visualbell
 set autoread
 au CursorHold * checktime
 
+tnoremap <esc> <c-\><c-n>
+
 " unmap builtin keys
 inoremap <c-space> <Nop>
 noremap <c-space> <Nop>

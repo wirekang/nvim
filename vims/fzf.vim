@@ -5,6 +5,7 @@ augroup fzf
     \ | tnoremap <buffer> <m-j> <down>
     \| tnoremap <buffer> <m-k> <up>
     \| tnoremap <buffer> <m-o> <cr>
+    \| tnoremap <buffer> <esc> <esc>
 augroup END
 
 let g:fzf_action = {

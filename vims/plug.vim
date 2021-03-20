@@ -14,10 +14,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'luochen1990/rainbow'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'puremourning/vimspector'
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdcommenter'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'jiangmiao/auto-pairs'
 call plug#end()

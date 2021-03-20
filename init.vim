@@ -13,8 +13,7 @@ source ~/.config/nvim/vims/ultisnips.vim
 source ~/.config/nvim/vims/git-gutter.vim
 source ~/.config/nvim/vims/fzf.vim
 source ~/.config/nvim/vims/vim-jsx-typescript.vim
-source ~/.config/nvim/vims/rainbow.vim
-source ~/.config/nvim/vims/vim-indent-guides.vim
+source ~/.config/nvim/vims/rainbow_parentheses.vim
 source ~/.config/nvim/vims/vimspector.vim
 source ~/.config/nvim/vims/auto-pairs.vim
 source ~/.config/nvim/vims/nerdcommenter.vim
