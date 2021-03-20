@@ -1,5 +1,4 @@
 set nocompatible
-set autoread
 set nowrap
 set shortmess+=c
 set noswapfile
@@ -34,6 +33,9 @@ set backupdir=~/.cache/nvim
 set nostartofline
 set sidescroll=1
 set visualbell
+
+set autoread
+au CursorHold * checktime
 
 " unmap builtin keys
 inoremap <c-space> <Nop>
