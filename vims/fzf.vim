@@ -13,7 +13,6 @@ let g:fzf_action = {
     \ "alt-v":"vsplit"
     \}
 
-nmap <leader>f :<c-u>execute 'FZF' getcwd()<cr>
-nmap <leader>ff :<c-u>execute 'FZF' expand('%:p:h')<cr>
+nmap <leader>f :<c-u>FZF<cr>
 
 

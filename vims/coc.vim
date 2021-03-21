@@ -18,9 +18,9 @@ let g:coc_snippet_next = '<tab>'
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-nmap <silent> <leader>ddj <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>ddk <Plug>(coc-diagnostic-prev)
-nnoremap <silent> <leader>dd :<c-u>CocDiagnostics<cr>
+nmap <silent> <leader>dj <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>dk <Plug>(coc-diagnostic-prev)
+nnoremap <silent> <leader>d :<c-u>CocDiagnostics<cr>
 
 
 augroup coc-diag
@@ -34,7 +34,7 @@ nmap <silent> <leader>gt <Plug>(coc-type-definition)
 nmap <silent> <leader>gi <Plug>(coc-implementation)
 nmap <silent> <leader>gr <Plug>(coc-references)
 
-nnoremap <silent> <leader>d :<c-u>call CocActionAsync('doHover')<cr>
+nnoremap <silent> <leader>h :<c-u>call CocActionAsync('doHover')<cr>
 
 nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>rf <Plug>(coc-format)

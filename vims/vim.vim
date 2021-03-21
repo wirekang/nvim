@@ -19,12 +19,12 @@ set smartindent
 set nu
 set relativenumber
 set signcolumn=yes
-set cmdheight=2
+set cmdheight=3
 set laststatus=2
 set cursorline
 set updatetime=100
 set colorcolumn=90
-set timeoutlen=700
+set timeoutlen=500
 set lazyredraw
 set encoding=utf-8 nobomb
 set scrolloff=5

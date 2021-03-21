@@ -17,4 +17,4 @@ source ~/.config/nvim/vims/rainbow_parentheses.vim
 source ~/.config/nvim/vims/vimspector.vim
 source ~/.config/nvim/vims/auto-pairs.vim
 source ~/.config/nvim/vims/nerdcommenter.vim
-
+source ~/.config/nvim/vims/nvim-treesitter.vim
