@@ -11,7 +11,6 @@ set history=1000
 set mouse-=a
 set fileencoding=utf-8
 set hlsearch
-set ignorecase
 set incsearch
 set hidden
 set autoindent
