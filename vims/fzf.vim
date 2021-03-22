@@ -12,7 +12,7 @@ let g:fzf_action = {
     \ "alt-s":"split",
     \ "alt-v":"vsplit"
     \}
-
+let $FZF_DEFAULT_COMMAND = "find . ! -path '*node_modules*'"
 nmap <leader>f :<c-u>FZF<cr>
 
 

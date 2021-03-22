@@ -10,7 +10,7 @@
   "snippets.ultisnips.enable": true,
   "explorer.file.git.showUntrackedFiles": true,
   "explorer.quitOnOpen": true,
-  "explorer.previewAction.onHover": "content",
+  "explorer.file.showHiddenFiles": true,
   "explorer.keyMappings.global": {
     "<esc>": "quit"
   },
