@@ -1,1 +1,1 @@
-![vim-tree (6)](https://user-images.githubusercontent.com/43294688/111896816-78508080-8a5f-11eb-8d9a-87c7c56d271c.png)
+![vim-tree (7)](https://user-images.githubusercontent.com/43294688/112257480-43833a00-8ca8-11eb-8f12-284f324d3183.png)
