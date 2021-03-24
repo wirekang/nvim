@@ -6,11 +6,13 @@
       "filetypes": ["sh"]
     }
   },
-  "suggest.minTriggerInputLength": 2,
   "snippets.ultisnips.enable": true,
+  "suggest.enablePreview": true,
   "explorer.file.git.showUntrackedFiles": true,
   "explorer.quitOnOpen": true,
   "explorer.file.showHiddenFiles": true,
+  "explorer.width": 50,
+  "explorer.previewAction.onHover": false,
   "explorer.keyMappings.global": {
     "<esc>": "quit"
   },
@@ -25,5 +27,9 @@
       ]
     }
   },
-  "coc.preferences.formatOnSaveFiletypes": ["*"]
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "suggest.triggerCompletionWait": 500,
+  "typescript.suggest.completeFunctionCalls": false,
+  "codeLens.enable": true,
+  "prettier.singleQuote": true
 }

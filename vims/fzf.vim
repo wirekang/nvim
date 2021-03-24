@@ -12,7 +12,6 @@ let g:fzf_action = {
     \ "alt-s":"split",
     \ "alt-v":"vsplit"
     \}
-let $FZF_DEFAULT_COMMAND = "find . ! -path '*node_modules*'"
-nmap <leader>f :<c-u>FZF<cr>
-
-
+let $FZF_DEFAULT_COMMAND = "find . ! -path '*node_modules*' ! -path '*.git/*'"
+nnoremap <c-f> :<c-u>Files<cr>
+inoremap <c-f> <esc>:<c-u>Files<cr>

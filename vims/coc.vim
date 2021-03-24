@@ -18,29 +18,32 @@ let g:coc_snippet_next = '<tab>'
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-nmap <silent> <leader>dj <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>dk <Plug>(coc-diagnostic-prev)
-nnoremap <silent> <leader>d :<c-u>CocDiagnostics<cr>
+nnoremap D <Nop>
+nmap <silent> Dj <Plug>(coc-diagnostic-next)
+nmap <silent> Dk <Plug>(coc-diagnostic-prev)
+nnoremap <silent> Da :<c-u>CocList diagnostics<cr>
 
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gt <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
-augroup coc-diag
-  au!
-  au FileType qf
-    \ nnoremap <buffer> <esc> :<c-u>q<cr>
-augroup end
+nnoremap <silent> <c-h> :<c-u>call CocActionAsync('doHover')<cr>
+inoremap <silent> <c-h> <esc>:<c-u> call CocActionAsync('doHover')<cr>
 
-nmap <silent> <leader>gd <Plug>(coc-definition)
-nmap <silent> <leader>gt <Plug>(coc-type-definition)
-nmap <silent> <leader>gi <Plug>(coc-implementation)
-nmap <silent> <leader>gr <Plug>(coc-references)
+nnoremap R <nop>
+nmap Rn <Plug>(coc-rename)
+nmap Rf <Plug>(coc-format)
+nnoremap Ri :<c-u>call CocAction('runCommand', 'editor.action.organizeImport')<cr>
+nmap Rr <Plug>(coc-refactor)
 
-nnoremap <silent> <leader>h :<c-u>call CocActionAsync('doHover')<cr>
+nmap ca <Plug>(coc-codeaction)
+nmap cf <Plug>(coc-fix-current)
+nmap cl <Plug>(coc-codelens-action)
 
-nmap <leader>rn <Plug>(coc-rename)
-nmap <leader>rf <Plug>(coc-format)
-nmap <leader>r <Plug>(coc-refactor)
-
-nmap <leader>ca <Plug>(coc-codeaction)
-nmap <leader>c <Plug>(coc-fix-current)
-
-nmap <leader>cl <Plug>(coc-codelens-action)
+nnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : ""
+nnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : ""
+inoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : ""
+inoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : ""
+vnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : ""
+vnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : ""

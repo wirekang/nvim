@@ -1,5 +1,5 @@
 let g:NERDCreateDefaultMappings = 0
-nmap <leader>cc <Plug>NERDCommenterComment
-xmap <leader>cc <Plug>NERDCommenterComment
-nmap <leader>cC <Plug>NERDCommenterUncomment
-xmap <leader>cC <Plug>NERDCommenterUncomment
+nmap cc <Plug>NERDCommenterComment
+xmap cc <Plug>NERDCommenterComment
+nmap cC <Plug>NERDCommenterUncomment
+xmap cC <Plug>NERDCommenterUncomment

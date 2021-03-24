@@ -48,29 +48,16 @@ imap <m-space> <esc><space>
 nmap <m-space> <space>
 xmap <m-space> <space>
 
-nnoremap <leader>bda :<c-u>%bdelete<cr>
-nnoremap <leader>bdo :<c-u>1,100bd<cr>
-nnoremap <leader>bh :<c-u>bprevious<cr>
-nnoremap <leader>bH :<c-u>bfirst<cr>
-nnoremap <leader>bl :<c-u>bnext<cr>
-nnoremap <leader>bL :<c-u>blast<cr>
-nnoremap <leader>bd :<c-u>bdelete<cr>
-nnoremap <leader>bD :<c-u>bdelete!<cr>
-nnoremap <leader>b :<c-u>badd noname<cr>:<c-u>buffer noname<cr>
+nnoremap <c-b> <nop>
+inoremap <c-b> <nop>
+imap <c-b> <esc><c-b>
+nnoremap <c-b>d :<c-u>bdelete<cr>
+nnoremap <c-b>D :<c-u>bdelete!<cr>
 
-noremap <leader>wdo <c-w>o
-noremap <leader>wh <c-w>h
-noremap <leader>wj <c-w>j
-noremap <leader>wk <c-w>k
-noremap <leader>wl <c-w>l
-noremap <leader>ws :<c-u>split<cr><c-w>j
-noremap <leader>wv :<c-u>vsplit<cr><c-w>l
-noremap <leader>wK :<c-u>exe "resize " . (winheight(0) * 3/2)<cr>
-noremap <leader>wJ :<c-u>exe "resize " . (winheight(0) * 2/3)<cr>
-noremap <leader>wL :<c-u>exe "vertical resize " . (winwidth(0) * 2/3)<cr>
-noremap <leader>wH :<c-u>exe "vertical resize " . (winwidth(0) * 3/2)<cr>
-noremap <leader>wd <c-w>c
-noremap <leader>w <c-w><c-w>
+nnoremap <c-pagedown> :<c-u>bnext<cr>
+inoremap <c-pagedown> <esc>:<c-u>bnext<cr>
+nnoremap <c-pageup> :<c-u>bprevious<cr>
+inoremap <c-pageup> <esc>:<c-u>bprevious<cr>
 
 function! s:ZoomToggle() abort
     if exists('t:zoomed') && t:zoomed
@@ -86,9 +73,23 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <leader>wz :<c-u>ZoomToggle<CR>
 
-noremap <leader>swq :<c-u>wq<cr>
-noremap <leader>sq :<c-u>q<cr>
-noremap <leader>sw :<c-u>w<cr>
-noremap <leader>sr :<c-u>set relativenumber!<cr>
-noremap <leader>sh :<c-u>noh<cr>
-noremap <leader>s :<c-u>so $MYVIMRC<cr>
+nnoremap s <nop>
+nnoremap sw :<c-u>w<cr>
+nnoremap sr :<c-u>set relativenumber!<cr>
+nnoremap sh :<c-u>noh<cr>
+nnoremap ss :<c-u>so $MYVIMRC<cr>
+
+function! s:echoFileType() abort
+  set filetype?
+  return ''
+endfunction
+
+inoremap <expr> <F9> <sid>echoFileType()
+nnoremap <expr> <F9> <sid>echoFileType()
+cnoremap <expr> <F9> <sid>echoFileType()
+tnoremap <expr> <F9> <sid>echoFileType()
+xnoremap <expr> <F9> <sid>echoFileType()
+onoremap <expr> <F9> <sid>echoFileType()
+lnoremap <expr> <F9> <sid>echoFileType()
+tnoremap <expr> <F9> <sid>echoFileType()
+snoremap <expr> <F9> <sid>echoFileType()
