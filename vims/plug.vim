@@ -7,7 +7,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-rooter'
-Plug 'TaDaa/vimade'
 Plug 'roryokane/detectindent'
 Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

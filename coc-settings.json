@@ -28,7 +28,6 @@
     }
   },
   "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "suggest.triggerCompletionWait": 500,
   "typescript.suggest.completeFunctionCalls": false,
   "codeLens.enable": true,
   "prettier.singleQuote": true

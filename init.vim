@@ -19,3 +19,4 @@ runtime vims/auto-pairs.vim
 runtime vims/nerdcommenter.vim
 runtime vims/nvim-treesitter.vim
 runtime vims/vim-surround.vim
+runtime vims/vim-easymotion.vim

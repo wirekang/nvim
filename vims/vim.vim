@@ -54,10 +54,15 @@ imap <c-b> <esc><c-b>
 nnoremap <c-b>d :<c-u>bdelete<cr>
 nnoremap <c-b>D :<c-u>bdelete!<cr>
 
-nnoremap <c-pagedown> :<c-u>bnext<cr>
-inoremap <c-pagedown> <esc>:<c-u>bnext<cr>
-nnoremap <c-pageup> :<c-u>bprevious<cr>
-inoremap <c-pageup> <esc>:<c-u>bprevious<cr>
+nnoremap <c-o> :<c-u>bnext<cr>
+inoremap <c-o> <esc>:<c-u>bnext<cr>
+nnoremap <c-i> :<c-u>bprevious<cr>
+inoremap <c-i> <esc>:<c-u>bprevious<cr>
+
+nnoremap <c-m-o> :<c-u>tabnext<cr>
+inoremap <c-m-o> <esc>:<c-u>tabnext<cr>
+nnoremap <c-m-i> :<c-u>tabprevious<cr>
+inoremap <c-m-i> <esc>:<c-u>tabprevious<cr>
 
 function! s:ZoomToggle() abort
     if exists('t:zoomed') && t:zoomed
@@ -78,18 +83,3 @@ nnoremap sw :<c-u>w<cr>
 nnoremap sr :<c-u>set relativenumber!<cr>
 nnoremap sh :<c-u>noh<cr>
 nnoremap ss :<c-u>so $MYVIMRC<cr>
-
-function! s:echoFileType() abort
-  set filetype?
-  return ''
-endfunction
-
-inoremap <expr> <F9> <sid>echoFileType()
-nnoremap <expr> <F9> <sid>echoFileType()
-cnoremap <expr> <F9> <sid>echoFileType()
-tnoremap <expr> <F9> <sid>echoFileType()
-xnoremap <expr> <F9> <sid>echoFileType()
-onoremap <expr> <F9> <sid>echoFileType()
-lnoremap <expr> <F9> <sid>echoFileType()
-tnoremap <expr> <F9> <sid>echoFileType()
-snoremap <expr> <F9> <sid>echoFileType()
