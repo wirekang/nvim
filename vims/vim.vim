@@ -23,7 +23,7 @@ set laststatus=2
 set cursorline
 set updatetime=100
 set colorcolumn=90
-set timeoutlen=500
+set timeoutlen=400
 set lazyredraw
 set encoding=utf-8 nobomb
 set scrolloff=5
@@ -44,9 +44,6 @@ noremap <c-space> <Nop>
 noremap <space> <nop>
 
 let mapleader=" "
-imap <m-space> <esc><space>
-nmap <m-space> <space>
-xmap <m-space> <space>
 
 nnoremap <c-b> <nop>
 inoremap <c-b> <nop>
@@ -54,15 +51,10 @@ imap <c-b> <esc><c-b>
 nnoremap <c-b>d :<c-u>bdelete<cr>
 nnoremap <c-b>D :<c-u>bdelete!<cr>
 
-nnoremap <c-o> :<c-u>bnext<cr>
-inoremap <c-o> <esc>:<c-u>bnext<cr>
-nnoremap <c-i> :<c-u>bprevious<cr>
-inoremap <c-i> <esc>:<c-u>bprevious<cr>
-
-nnoremap <c-m-o> :<c-u>tabnext<cr>
-inoremap <c-m-o> <esc>:<c-u>tabnext<cr>
-nnoremap <c-m-i> :<c-u>tabprevious<cr>
-inoremap <c-m-i> <esc>:<c-u>tabprevious<cr>
+nnoremap <c-l> :<c-u>bnext<cr>
+inoremap <c-l> <esc>:<c-u>bnext<cr>
+nnoremap <c-h> :<c-u>bprevious<cr>
+inoremap <c-h> <esc>:<c-u>bprevious<cr>
 
 function! s:ZoomToggle() abort
     if exists('t:zoomed') && t:zoomed
@@ -75,8 +67,7 @@ function! s:ZoomToggle() abort
         let t:zoomed = 1
     endif
 endfunction
-command! ZoomToggle call s:ZoomToggle()
-nnoremap <silent> <leader>wz :<c-u>ZoomToggle<CR>
+nnoremap <c-w>z :<c-u>call <sid>ZoomToggle()<CR>
 
 nnoremap s <nop>
 nnoremap sw :<c-u>w<cr>
