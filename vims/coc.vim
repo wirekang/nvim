@@ -28,8 +28,7 @@ nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-nnoremap <m-space> :<c-u>call CocActionAsync('doHover')<cr>
-inoremap <m-space> <esc>:<c-u>call CocActionAsync('doHover')<cr>
+nnoremap <c-space> :<c-u>call CocActionAsync('doHover')<cr>
 
 nnoremap R <nop>
 nmap Rn <Plug>(coc-rename)

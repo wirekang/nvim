@@ -32,16 +32,12 @@ set backupdir=~/.cache/nvim
 set nostartofline
 set sidescroll=1
 set visualbell
+set cursorcolumn
 
 set autoread
 au CursorHold * checktime
 
 tnoremap <esc> <c-\><c-n>
-
-" unmap builtin keys
-inoremap <c-space> <Nop>
-noremap <c-space> <Nop>
-noremap <space> <nop>
 
 let mapleader=" "
 
