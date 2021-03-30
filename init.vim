@@ -12,8 +12,6 @@ runtime vims/vim-which-key.vim
 runtime vims/ultisnips.vim
 runtime vims/git-gutter.vim
 runtime vims/fzf.vim
-runtime vims/vim-jsx-typescript.vim
-runtime vims/rainbow_parentheses.vim
 runtime vims/vimspector.vim
 runtime vims/auto-pairs.vim
 runtime vims/nerdcommenter.vim

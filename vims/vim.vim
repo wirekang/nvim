@@ -6,7 +6,6 @@ set nowrapscan
 set shiftwidth=2
 set expandtab
 set tabstop=2
-syntax enable
 set history=1000
 set mouse-=a
 set fileencoding=utf-8
@@ -33,6 +32,8 @@ set nostartofline
 set sidescroll=1
 set visualbell
 set cursorcolumn
+syntax on
+
 
 set autoread
 au CursorHold * checktime
@@ -47,10 +48,8 @@ imap <c-b> <esc><c-b>
 nnoremap <c-b>d :<c-u>bdelete<cr>
 nnoremap <c-b>D :<c-u>bdelete!<cr>
 
-nnoremap <c-l> :<c-u>bnext<cr>
-inoremap <c-l> <esc>:<c-u>bnext<cr>
-nnoremap <c-h> :<c-u>bprevious<cr>
-inoremap <c-h> <esc>:<c-u>bprevious<cr>
+nnoremap <c-l> :<c-u>e #<cr>
+inoremap <c-l> <esc>:<c-u>e #<cr>
 
 function! s:ZoomToggle() abort
     if exists('t:zoomed') && t:zoomed
