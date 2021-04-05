@@ -15,6 +15,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'windwp/nvim-ts-autotag'
 Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
 call plug#end()

@@ -1,2 +1,6 @@
 node_modules
 plugged
+*history.json
+coc/snippets-mru
+coc/commands
+coc/explorer-actions
