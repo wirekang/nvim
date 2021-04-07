@@ -17,7 +17,7 @@ set smartindent
 set nu
 set relativenumber
 set signcolumn=yes
-set cmdheight=3
+set cmdheight=2
 set laststatus=2
 set cursorline
 set updatetime=100
