@@ -1,1 +1,1 @@
-let g:rooter_patterns=['package.json','.git']
+let g:rooter_patterns=['package.json','go.mod','.git']
