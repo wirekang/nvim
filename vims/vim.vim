@@ -32,6 +32,7 @@ set nostartofline
 set sidescroll=1
 set visualbell
 set cursorcolumn
+set clipboard=unnamed
 syntax on
 
 
