@@ -1,4 +1,4 @@
-let g:vimspector_install_gadgets = ['debugger-for-chrome','vscode-node-debug2',"vscode-go"]
+let g:vimspector_install_gadgets = ['vscode-node-debug2',"vscode-go"]
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 let g:vimspector_sign_priority = {
   \ 'vimspectorBP': 999,
