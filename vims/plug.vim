@@ -17,4 +17,5 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
+Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()

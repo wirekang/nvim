@@ -19,3 +19,4 @@ runtime vims/nvim-treesitter.vim
 runtime vims/vim-surround.vim
 runtime vims/vim-easymotion.vim
 runtime vims/vim-closetag.vim
+runtime vims/nvim-colorizer.lua.vim
