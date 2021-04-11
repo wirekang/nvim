@@ -28,12 +28,17 @@ React.ReactElement;
 endsnippet
 
 snippet sty
-import styled from 'styled-components';
+import { Styles, toCss } from "config/theme";
+import styled from "styled-components";
 
-interface Props{};
+interface Props {
+  ss?: Styles;
+}
 
-const $1 = styled.$2<Props>\`$3\`;
+const $1 = styled.div<Props>\`
+	$2
+  ${({ ss }) => toCss(ss)}
+\`;
 
 export default $1;
-
 endsnippet
