@@ -8,7 +8,7 @@ import styled from 'styled-components';
 
 interface WrapperProps{};
 
-const $1Wrapper = styled.div<WrapperProps>\`\`;
+const $1Wrapper = styled.$2<WrapperProps>\`\`;
 
 interface Props {};
 
@@ -23,22 +23,38 @@ const $1: React.FC<Props> = (props) => {
 export default $1;
 endsnippet
 
-snippet rre 
-React.ReactElement;
-endsnippet
 
-snippet sty
-import { Styles, toCss } from "config/theme";
-import styled from "styled-components";
+snippet rfcp
+import React from 'react';
+import styled, {css} from 'styled-components';
 
-interface Props {
-  ss?: Styles;
-}
+export interface $1Props {};
 
-const $1 = styled.div<Props>\`
-	$2
-  ${({ ss }) => toCss(ss)}
+const $1Wrapper = styled.$2<$1Props>\`
+	${(p)=>css\`\`}
 \`;
 
+const $1: React.FC<$1Props> = (props) => {
+	return <$1Wrapper {...props}>{props.children}</$1Wrapper>;
+};
+
 export default $1;
+endsnippet
+
+
+snippet rfcs
+import React from 'react';
+
+const $1: React.FC = (props) => {
+	
+	return (
+		<$2
+	);
+};
+
+export default $1;
+endsnippet
+
+snippet rrn
+React.ReactNode
 endsnippet
