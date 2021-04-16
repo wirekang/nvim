@@ -13,10 +13,10 @@ runtime vims/ultisnips.vim
 runtime vims/git-gutter.vim
 runtime vims/fzf.vim
 runtime vims/vimspector.vim
-runtime vims/auto-pairs.vim
 runtime vims/nerdcommenter.vim
 runtime vims/nvim-treesitter.vim
 runtime vims/vim-surround.vim
 runtime vims/vim-easymotion.vim
 runtime vims/vim-closetag.vim
 runtime vims/nvim-colorizer.lua.vim
+

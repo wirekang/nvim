@@ -12,10 +12,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'puremourning/vimspector'
 Plug 'preservim/nerdcommenter'
-Plug 'jiangmiao/auto-pairs'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-surround'
-Plug 'alvan/vim-closetag'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'windwp/nvim-ts-autotag'
 call plug#end()

@@ -7,6 +7,18 @@ require'nvim-treesitter.configs'.setup {
   },
   indent = {
     enable = true
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "Ss",
+      node_incremental = "ni",
+      scope_incremental ="si",
+      node_decremental = "nd",
+    }
+  },
+  autotag = {
+    enable = true,
   }
 }
 EOF
