@@ -17,4 +17,5 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-surround'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'windwp/nvim-ts-autotag'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()

@@ -9,7 +9,12 @@
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
       "filetypes": ["go"],
-      "initializationOptions": {}
+      "initializationOptions": {
+        "gofumpt": true,
+        "analyses": {
+          "unusedresult": false
+        }
+      }
     }
   },
   "snippets.ultisnips.enable": true,
@@ -35,6 +40,5 @@
   },
   "coc.preferences.formatOnSaveFiletypes": ["*"],
   "typescript.suggest.completeFunctionCalls": false,
-  "codeLens.enable": true,
-  "prettier.singleQuote": true
+  "codeLens.enable": true
 }
