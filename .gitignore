@@ -5,3 +5,4 @@ coc/snippets-mru
 coc/commands
 coc/explorer-actions
 coc/extensions/db.json
+coc/extensions/coc-go-data

@@ -4,19 +4,13 @@
       "command": "bash-language-server",
       "args": ["start"],
       "filetypes": ["sh"]
-    },
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"],
-      "initializationOptions": {
-        "gofumpt": true,
-        "analyses": {
-          "unusedresult": false
-        }
-      }
     }
   },
+  "go.goplsOptions": {
+    "gofumpt": true,
+    "linksInHover": false
+  },
+  "go.checkForUpdates": "ask",
   "snippets.ultisnips.enable": true,
   "suggest.enablePreview": true,
   "explorer.file.git.showUntrackedFiles": true,
@@ -40,5 +34,6 @@
   },
   "coc.preferences.formatOnSaveFiletypes": ["*"],
   "typescript.suggest.completeFunctionCalls": false,
-  "codeLens.enable": true
+  "codeLens.enable": true,
+  "diagnostic.refreshOnInsertMode": true
 }

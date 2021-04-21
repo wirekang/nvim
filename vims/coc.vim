@@ -28,7 +28,7 @@ nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-nnoremap <c-space> :<c-u>call CocActionAsync('doHover')<cr>
+nnoremap <silent><c-space> :<c-u>call CocActionAsync('doHover')<cr>
 
 nnoremap R <nop>
 nmap Rn <Plug>(coc-rename)
@@ -47,4 +47,6 @@ inoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? "\<c-r>=coc#float
 vnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : ""
 vnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : ""
 
-inoremap <c-h> <c-\><c-o>:call CocActionAsync('showSignatureHelp')<cr>
+inoremap <silent><c-h> <c-\><c-o>:call CocActionAsync('showSignatureHelp')<cr>
+
+autocmd BufWritePre *.go,*.ts,*.tsx :call CocAction('runCommand', 'editor.action.organizeImport')
