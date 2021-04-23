@@ -66,10 +66,12 @@ endfunction
 nnoremap <c-w>z :<c-u>call <sid>ZoomToggle()<CR>
 
 nnoremap s <nop>
-nnoremap sw :<c-u>w<cr>
 nnoremap sr :<c-u>set relativenumber!<cr>
 nnoremap sh :<c-u>noh<cr>
 nnoremap ss :<c-u>so $MYVIMRC<cr>
+
+inoremap <c-s> <esc>:<c-u>w<cr>a
+nnoremap <c-s> :<c-u>w<cr>
 
 nnoremap <f1> i<enter><esc>k$Jx
 inoremap <f1> <enter><esc>k$Jxi

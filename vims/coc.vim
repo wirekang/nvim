@@ -49,4 +49,4 @@ vnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(
 
 inoremap <silent><c-h> <c-\><c-o>:call CocActionAsync('showSignatureHelp')<cr>
 
-autocmd BufWritePre *.go,*.ts,*.tsx :call CocAction('runCommand', 'editor.action.organizeImport')
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
